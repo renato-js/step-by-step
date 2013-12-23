@@ -14,7 +14,7 @@
 
 */
 
-;(function (window,document,undefined) {
+;(function (window,document,undefined){
 
 
 var elementoAtual = 0,							//image current

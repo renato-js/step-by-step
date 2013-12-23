@@ -2,6 +2,10 @@ module.exports = function(grunt) {
   'use strict';
   grunt.initConfig({
 
+    uglify: {
+      'sbs-min.js': 'src/js/sbs.js'
+    },
+
   //minificar css
   cssmin: {
     add_banner: {
