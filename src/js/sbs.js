@@ -10,6 +10,7 @@
 // 1.1.1 - zerar elementDesc
 // 1.2 - inside description
 // 1.3 - show and hide when mouse is out
+// 1.4 - controle with keyboard key
 
 */
 
@@ -39,24 +40,13 @@ var isIE =  window.attachEvent ? isIE=true : isIE=false;	// TRUE is IE
 		
 		//show content
 		slide.onmouseover = function () {
-			//next / prev 
-			_$("sbs-bt-next").style.display = "block";
-			_$("sbs-bt-prev").style.display = "block";
-			
-			//desc
-			sequenciaDesc[elementoAtual].style.display = "block";
+			sbslider.hideLayout(false);
 		}
 
 		//hide content
 		slide.onmouseout = function () {
-			//next / prev 
-			_$("sbs-bt-next").style.display = "none";
-			_$("sbs-bt-prev").style.display = "none";
-			
-			//desc
-			sequenciaDesc[elementoAtual].style.display = "none";
+			sbslider.hideLayout(true);
 		}
-
 		
 		//clean vars
 		elementoAtual = 0;
@@ -100,6 +90,29 @@ var isIE =  window.attachEvent ? isIE=true : isIE=false;	// TRUE is IE
 		{
 			sbslider.changeImg(false);
 		}
+		
+		//key down
+		document.onkeydown = function (e) {
+
+
+			//next key
+			if(e.keyCode == 39)
+			{
+				sbslider.changeImg(true);
+			}
+
+			//prev key
+			if(e.keyCode == 37)
+			{
+				sbslider.changeImg(false);
+			}
+		
+			//*** bugfix
+			sequenciaDesc[elementoAtual].style.display = "none";
+
+		}
+
+		sbslider.hideLayout(true);
 
 	}
 
@@ -130,6 +143,26 @@ var isIE =  window.attachEvent ? isIE=true : isIE=false;	// TRUE is IE
 		//update counter
 		_$("sbs-nav-slide").innerHTML = (elementoAtual+1)+" / "+(sequenciaElementos.length)
 
+	}
+
+	//hide layout
+	sbslider.hideLayout = function (hide) {
+		if(hide == true)
+		{
+			//if true hide layout
+			_$("sbs-bt-next").style.display = "none";
+			_$("sbs-bt-prev").style.display = "none";			
+			//desc
+			sequenciaDesc[elementoAtual].style.display = "none";			
+		}
+		else
+		{
+		//if false show layout
+			_$("sbs-bt-next").style.display = "block";
+			_$("sbs-bt-prev").style.display = "block";			
+			//desc
+			sequenciaDesc[elementoAtual].style.display = "block";
+		}
 	}
 
 	//call slide
