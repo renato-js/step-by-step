@@ -8,7 +8,8 @@
 
 // 1.0 - Step by step to create some slides easy and extremely fast and ligth
 // 1.1.1 - zerar elementDesc
-// 
+// 1.2 - inside description
+// 1.3 - show and hide when mouse is out
 
 */
 
@@ -36,7 +37,26 @@ var isIE =  window.attachEvent ? isIE=true : isIE=false;	// TRUE is IE
 		_divsImg = slide.getElementsByTagName("img"); 	//content of images slider
 		_divsDesc = slide.getElementsByTagName("span"); //content of images slider
 		
-		console.log("carregou a funcao");
+		//show content
+		slide.onmouseover = function () {
+			//next / prev 
+			_$("sbs-bt-next").style.display = "block";
+			_$("sbs-bt-prev").style.display = "block";
+			
+			//desc
+			sequenciaDesc[elementoAtual].style.display = "block";
+		}
+
+		//hide content
+		slide.onmouseout = function () {
+			//next / prev 
+			_$("sbs-bt-next").style.display = "none";
+			_$("sbs-bt-prev").style.display = "none";
+			
+			//desc
+			sequenciaDesc[elementoAtual].style.display = "none";
+		}
+
 		
 		//clean vars
 		elementoAtual = 0;
