@@ -1,24 +1,47 @@
-###step-by-step.js
--
+#sbs.js
 
-
+link preview: www.grupoartway.com.br/sbs
 
 A little step by step to teach something. It's like Power point presentation but only for web.
 
 
-###Why not GIFs?
-This plugin is to you make some step by step of something. I really like GIFs to show some code tip, but some times i need to have see it in loop if i have past some important screen.
+###- How to  use
+- Put script tag on you page
+	
+    	<script type="text/javascript" src="../src/js/sbs.js"></script>
+
+- Put link tag on page to css style of sbs component
+
+		<link rel="stylesheet" href="../src/css/sbs-style.css">
+
+- Put a template code your web page
+
+		<!-- STEP BY STEP - COMPONENT Template -->
+		<div id="sbs-slider" >
+			
+			<!-- buttons next and prev -->
+			<div id="sbs-bt-next"></div>
+			<div id="sbs-bt-prev"></div>
+			
+			<!-- images sequencial -->
+			<img src="img/img1.jpg" class="sbs-img" alt="">	
+			<img src="img/img2.jpg" class="sbs-img" alt="">	
+			<img src="img/img3.jpg" class="sbs-img" alt="">
+		
+			<!-- navigation -->
+			<div id="sbs-nav-slide"></div>
+			
+			<!-- legend sequencial -->
+			<span class="desc"><b>Step 1</b>. Download sbs.js to put it on your HEAD tag.</span>
+			<span class="desc"><b>Step 2</b>. Put template code of slider step by step and modify.</span>
+			<span class="desc"><b>Step 3</b>. Change or add some legends to any steps image of slide.</span>
+
+		</div>	
+
+- Change the image `src` itens with yours.
 
 
-###Why not Video tags?
 
-Make videos to show Tips is really usefull but, is too much to lower conections and olders browsers.
-
-###WHAT IS THE SOLUTION?
-Well, a image sequencials is a little solution that i found to teach some code and TI tips. It's usefull like animated GIFs and controlable like Videos PLUS is very light to all browsers.
-
-This is a component to my EAD project called CANOA. It's not Open source (yet) but i'm trying so hard to make tools to teach every body using web.
-
-I hope you enjoy ;-)
 
 > The WEB is a great way to you learn every thing, DO IT!
+ 

@@ -1,0 +1,64 @@
+/*=========================================
+=            Style.css - reset            =
+=========================================*/
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3,
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+font-family: "Times New Roman";
+}
+
+:focus { outline: 0;}
+a, a:link, a:visited, a:hover, a:active{text-decoration:none}
+table {	border-collapse: separate;border-spacing: 0;}
+th, td {text-align: left; font-weight: normal;}
+img, iframe {border: none; text-decoration:none;}
+ol, ul {list-style: none;}
+input, textarea, select, button {font-size: 100%;font-family: inherit;}
+select {margin: inherit;}
+
+
+h1 { font-size: 3em; text-align: center; }
+
+h2 { font-size: 2em; text-align: center; margin: 30px 0px; color: #D1D1D1; font-style: italic}
+
+h3 { font-size: 1.5em; margin: 30px 0px 5px; color: #5D5D5D; font-family: "calibri"}
+
+p, ul li, a {
+	font-size: 1.2em; font-family: "calibri";color: #6F6F6F; letter-spacing: 0.05em;
+}
+
+a {	color: #57CAF0;}
+a:hover {	color: #14ACDE;}
+
+
+
+ul {
+	list-style: circle;
+	list-style-position: inside;
+}
+
+/*body*/
+#main-content {
+	width: 100%;
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 0px;
+}
+
+
+
+

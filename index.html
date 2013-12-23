@@ -3,70 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SBS</title>
-
-	<style>
-		
-		#sbs-slider {
-			margin: auto;
-			background-color: gray;
-			max-width: 600px;
-			display: table;
-			text-align: center;
-		}
-			#sbs-slider img {
-				margin: auto;
-				width: 100%;
-			}
-
-		#sbs-bt-next {
-			float: right; 
-			width: 100px;
-			height: 100px;
-			background-color: #ddc471;
-			cursor: pointer;
-		}
-
-		#sbs-bt-prev {
-			float: left;
-			width: 100px;
-			height: 100px;
-			background-color: #ddc471;
-			cursor: pointer;
-		}
-
-		#sbs-bt-prev:hover, #sbs-bt-next:hover {
-			background-color: #eacf77;
-		}
-
-
-
-	
-	</style>
+	<link rel="stylesheet" href="src/css/sbs-style.css">
+	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 
-	<h1>Plugin to show a little step by step in Javascript.</h1>
-	<h2>This is a component (module) of Canoa project. A EAD created by Renato Santos to teach everybody to uses the web and computer.</h2>
+	<section id="main-content">
 
+		<h1>sbsJS - Step by Step</h1>
+		<h2>A simple component to show step by step of something in your web site</h2>
 
-<div id="sbs-slider">
-	
-	<!-- component -->
-	<img src="img/img1.jpg" class="sbs-img" alt="">	
-	<img src="img/img2.jpg" class="sbs-img" alt="">	
-	<img src="img/img3.jpg" class="sbs-img" alt="">
+	<h1>-</h1>
+
 		
+		<!-- STEP BY STEP - COMPONENT Template -->
+		<div id="sbs-slider" >
+			
+			<!-- buttons next and prev -->
+			<div id="sbs-bt-next"></div>
+			<div id="sbs-bt-prev"></div>
+			
+			<!-- images sequencial -->
+			<img src="img/img1.jpg" class="sbs-img" alt="">	
+			<img src="img/img2.jpg" class="sbs-img" alt="">	
+			<img src="img/img3.jpg" class="sbs-img" alt="">
+			<img src="img/img4.jpg" class="sbs-img" alt="">
+			<img src="img/img5.jpg" class="sbs-img" alt="">
+			<img src="img/img6.jpg" class="sbs-img" alt="">
+		
+			<!-- navigation -->
+			<div id="sbs-nav-slide"></div>
+			
+			<!-- legend sequencial -->
+			<span class="desc"><b>Passo 1</b>. Clique com o botão direito sobre o Primeiro frame.</span>
+			<span class="desc"><b>Passo 2</b>. Clique com o botão Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, cumque enim omnis dicta nesciunt consequatur quam nobis sit blanditiis quisquam!direito sobre o Primeiro frame.</span>
+			<span class="desc"><b>Passo 3</b>. Clique com o botão direito sobre o Primeiro frame.</span>
+			<span class="desc"><b>Passo 4</b>. Clique com o botão direito sobre o Primeiro frame.</span>
+			<span class="desc"><b>Passo 5</b>. Ponha o mouse por cima do menu "avançar"</span>
+			<span class="desc"><b>Passo 6</b>. Clique em "fechar" para proseguir.</span>
 
-	<div id="sbs-nav-slide"></div>
+		</div>	
 
-	<div id="sbs-bt-next">Avancar</div>
-	<div id="sbs-bt-prev">Voltar</div>
+<h1>-</h1>
+		<h3>How to Use</h3>
+		<hr>
+		<ul>
+			<li>Go to <a href="https://github.com/renato-js/step-by-step" target="_blank">https://github.com/renato-js/step-by-step</a>.</li>
+		</ul>
 
 
-</div>
+		<h3>What is it?</h3>
+		<hr>
+		<p>This is a component javascript (without Jquery library to make your project more less) to put a simple slide show on your web site.</p>
+		<p>When we need to show tip code on web, many peoples uses Gifs or video, but these ways are not usefefull for some little tricks.</p>
+		<p>Wiht slider SBS you can put your slides (images) on sequencials and put control to your user to teach some thing. It's easy and light to uses.</p>
 
+<h1>--</h1>
+		<h3>Versions</h3>
+		<hr>
+		<p><b>v1.0</b> - Version with template code.</p>
 
+		<h3>Bugs</h3>
+		<hr>
+		<p><b>v1.0</b> - This version is only possible one slide per web pages.</p>
 
+	</section>
 	
 	<script type="text/javascript" src="src/js/sbs.js"></script>
 </body>

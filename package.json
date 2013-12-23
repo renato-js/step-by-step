@@ -14,5 +14,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/renato-js/step-by-step/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "~0.7.0"
   }
 }

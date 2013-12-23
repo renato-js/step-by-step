@@ -1,0 +1,76 @@
+/*===============================================================
+=            sbs-style.css - Simple slide image show            =
+===============================================================*/
+
+/*==========  Description  ==========*/
+
+/* typography */
+
+/* counter */
+#sbs-nav-slide {
+	font-family: "calibri";
+	border-bottom: 1px dashed #BFBFBF;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+
+/* description span */
+.desc {
+	font-family: "calibri";
+	padding: 5px 0px;
+	text-align: left;
+
+}
+
+/*==========  Slider  ==========*/
+
+/* slider box */
+#sbs-slider {
+	position: relative;
+	margin: 50px auto;
+
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	
+	/* images slider */
+	#sbs-slider img {
+		margin: auto;
+		width: 100%;
+	}
+
+/* button next */
+#sbs-bt-next {
+	background: url("../../img/sbs-button-next.png") no-repeat -52px 0;
+	position: absolute;
+	top: 150px;
+	right: 15px;
+	width: 51px;
+	height: 51px;
+	cursor: pointer;
+	opacity: .5;
+}
+
+/* button prev */
+#sbs-bt-prev {
+	background: url("../../img/sbs-button-next.png") no-repeat 0 0;
+	position: absolute;
+	top:150px;
+	left: 15px;
+	width: 51px;
+	height: 51px;
+	cursor: pointer;
+	opacity: .5;
+}
+
+/* button prev / next - hover */
+#sbs-bt-prev:hover, #sbs-bt-next:hover {
+	opacity: 1;
+}
