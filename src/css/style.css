@@ -61,4 +61,16 @@ ul {
 
 
 
+#renato-contact {
+	margin: 50px;
+	text-align: center;
+}
 
+.twitter {
+	margin: 20px auto;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background: url("https://pbs.twimg.com/profile_images/378800000786296997/8ccab2c0d8e4f54bf5621631253f3161_normal.jpeg") no-repeat 0 0;
+	border-radius: 50px;
+}
