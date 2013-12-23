@@ -4,8 +4,13 @@ link preview: www.grupoartway.com.br/sbs
 
 A little step by step to teach something. It's like Power point presentation but only for web.
 
+### Interactions
+To interaction with slides, you can click on ***ARROWS IMAGES left or right***. This arrows only are showed when you put mouse over slide screen.
+When you *put mouse over slider screen*, the description section are showed too.
 
-###- How to  use
+If you prefer, you can change slides pressing ***KEYBOARD ARROW left or right***.
+
+###- How to  use in your project?
 - Put script tag on you page
 	
     	<script type="text/javascript" src="../src/js/sbs.js"></script>
